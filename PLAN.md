@@ -241,7 +241,7 @@ medical advice" framing intact, and provenance on every claim.
 When a contributor or AI session is tempted toward an out-of-scope item (e.g., a drafting prompt
 that would have the model state a survival figure from memory, or soften a refusal into soft
 advice), the editorial policy requires it to **stop and flag** rather than proceed (mirrors the
-Elyos refusal guardrails in `CLAUDE.md`).
+Hee-Lee Oss refusal guardrails in `CLAUDE.md`).
 
 ---
 
@@ -311,7 +311,7 @@ two-key release gate.
 
 **Formats & tooling.** Source content authored in **Markdown** with structured front-matter
 (topic, audience, sources, reading-level, sign-off) in a Git repo so every change is reviewable
-and provenance is diffable. Build tooling (lightweight, TypeScript/ESM per Elyos conventions):
+and provenance is diffable. Build tooling (lightweight, TypeScript/ESM per Hee-Lee Oss conventions):
 a **citation-coverage check** (fail if any assertion lacks a vetted source), a **readability
 check** (fail if a page exceeds the grade bar), a **label lint** (fail if "not medical advice"
 framing is missing), and a **staleness check** (flag/withhold pages past `validUntil`). Output
@@ -326,7 +326,7 @@ bedside). No reader data is collected; static delivery (no accounts, no tracking
   is forbidden from being the source of a medical fact.
 - **Provenance is structural** — "no source, no claim" is enforced by tooling, not goodwill.
 - **Plain language is measured**, not assumed (readability scoring + real-reader comprehension).
-- **Agent-neutral / Elyos-aligned** — Markdown + simple TS checks; no vendor lock-in; the CLI
+- **Agent-neutral / Hee-Lee Oss-aligned** — Markdown + simple TS checks; no vendor lock-in; the CLI
   never runs an agent headless (donated lane).
 - **Translation-ready by construction** so the high-value multilingual follow-on
   (`ewing-info-translations`) is cheap and safe.
@@ -397,7 +397,7 @@ restated-and-cited, not relicensed.
 **Privacy / PII stance (conservative).** The guide **collects no reader data** — no accounts, no
 analytics that identify readers, no health information, no family stories at launch. Because it
 touches **no patient-level data**, the patient-data attack surface is essentially eliminated by
-design. No secrets, tokens, or any PII are written into the repo, build artifacts, or logs (Elyos
+design. No secrets, tokens, or any PII are written into the repo, build artifacts, or logs (Hee-Lee Oss
 rule). If a future phase ever introduces feedback collection, it goes through a fresh privacy
 review and is out of scope here.
 
@@ -519,7 +519,7 @@ as explicitly-unpublished work; if reviewers are not secured by the M2 entry dat
 ## Work breakdown
 
 The itemized, schema-mapped backlog lives in **`TASKS.md`**: ~16 tasks across milestones M0–M5
-plus a future backlog, each mapped to the Elyos Task JSON schema, with per-task acceptance
+plus a future backlog, each mapped to the Hee-Lee Oss Task JSON schema, with per-task acceptance
 criteria for the most important items, milestone Definitions of Done, and a complete, schema-valid
 example Task JSON for the first M0 task (the editorial & safety policy / guardrail spec). The
 first build item is the **editorial & safety policy + the dual-review gate**, reflecting its
@@ -551,7 +551,7 @@ sources and measurable plain language. Every patient-facing writing task is `ris
     is **version-scoped** and **does not imply endorsement** of the product as a whole.
   - **Disagreement fallback:** either reviewer's "do not ship" on substance is binding — the
     maintainer cannot override it. A reviewer-vs-reviewer or reviewer-vs-maintainer dispute is
-    logged and escalated to **Elyos governance / a second credentialed reviewer** for a tie-break;
+    logged and escalated to **Hee-Lee Oss governance / a second credentialed reviewer** for a tie-break;
     contested clinical content does not ship until resolved. Where a single reviewer is a single
     point of failure, the project prefers securing a **backup reviewer** before relying on
     contested or high-sensitivity content.
@@ -560,7 +560,7 @@ sources and measurable plain language. Every patient-facing writing task is `ris
 - **Partner / requestor: TO BE SECURED** — the sarcoma foundation, COG/CCLG-affiliated program,
   or treating-center patient-education office that distributes the guide to families.
 - **Community / board:** source allow-list additions, license edge-cases, and the CC-BY decision
-  go through Elyos governance + the oncologist's concurrence.
+  go through Hee-Lee Oss governance + the oncologist's concurrence.
 
 ---
 
@@ -575,13 +575,13 @@ sources and measurable plain language. Every patient-facing writing task is `ris
 - **Tooling:** a Markdown content repo; small TypeScript/ESM build checks (citation coverage,
   readability scoring, label lint, staleness); static accessible HTML + print-friendly PDF
   output. No reader-data services, no analytics, no accounts.
-- **Sibling Elyos projects:** `ewing-trial-finder` (HIGH — link to its family-appropriate trial
+- **Sibling Hee-Lee Oss projects:** `ewing-trial-finder` (HIGH — link to its family-appropriate trial
   finder for the trials topic, do not duplicate); `ewing-survivorship-late-effects` (survivorship
   pointer); `ewing-info-translations` (HIGH — downstream consumer of this content,
   translation-ready hand-off); other Ewing data/KG projects only as *linked, published, family-
   appropriate* references, never as patient-data inputs.
-- **Elyos pieces:** `packages/schema` (Task JSON), `CLAUDE.md` (work rules + refusal guardrails +
-  cancer guardrails), `docs/good-deed-definition.md` (risk tiers), Elyos governance for
+- **Hee-Lee Oss pieces:** `packages/schema` (Task JSON), `CLAUDE.md` (work rules + refusal guardrails +
+  cancer guardrails), `docs/good-deed-definition.md` (risk tiers), Hee-Lee Oss governance for
   license/allow-list/edge-case decisions; donated-lane CLI (workspace prep + PRs, never headless).
 
 ---
@@ -624,7 +624,7 @@ review); and (d) **secrets hygiene** in the (small) tooling.
 - **Repo integrity:** every change reviewed; no patient-facing publish without recorded dual
   sign-off for the current version; provenance is diffable and auditable.
 - **No PII anywhere:** no reader accounts, no identifying analytics, no health-info or story
-  collection at launch; no secrets/tokens/PII in repo, build artifacts, or logs (Elyos rule).
+  collection at launch; no secrets/tokens/PII in repo, build artifacts, or logs (Hee-Lee Oss rule).
 - **Tooling hygiene:** minimal dependencies; dependency + secret scanning in CI for the build
   scripts; static output (no server-side reader data path to attack).
 
@@ -678,7 +678,7 @@ Adding a new vetted source or topic follows a documented, oncologist-concurred p
 
 - Proposal: `governance/proposals/ewing-family-guide.md` *(TO BE WRITTEN — referenced in
   `planning/ROADMAP.md` Track 8a)*
-- Elyos work rules, refusal guardrails & cancer guardrails: `CLAUDE.md`
+- Hee-Lee Oss work rules, refusal guardrails & cancer guardrails: `CLAUDE.md`
 - Good-deed definition & risk tiers: `docs/good-deed-definition.md`
 - Task JSON schema: `packages/schema/src/schemas.ts`
 - Portfolio + Track 8 cancer guardrails: `planning/ROADMAP.md`

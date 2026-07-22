@@ -21,9 +21,9 @@ and requires **dual blocking sign-off** (oncologist + patient-advocate) before i
 delivery partner, oncologist reviewer, or advocate reviewer is yet secured, so delivery/review-
 dependent tasks carry `requestor: TO BE SECURED` and `verifiedNeed: false`.
 
-## How these tasks map to Elyos
+## How these tasks map to Hee-Lee Oss
 
-Each task below becomes an Elyos **Task JSON** validated against
+Each task below becomes a Hee-Lee Oss **Task JSON** validated against
 `packages/schema/src/schemas.ts`. Field mapping:
 
 - **id** — stable slug `ewing-family-guide-<area>-NNN` (e.g. `ewing-family-guide-policy-001`).
@@ -325,7 +325,7 @@ Complete, schema-valid Task JSON for the first M0 task (`ewing-family-guide-poli
 Every backlog row above is now materialized as a schema-valid `tasks/<id>.json`
 (validated against `packages/schema/src/schemas.ts`; all start `status: open`,
 `lane: donated`, `urgent: false`, `verifiedNeed: false`, `requestor: TO BE SECURED`).
-All 22 tasks pass the Elyos task validator (filenames == ids, no duplicates, no extra keys).
+All 22 tasks pass the Hee-Lee Oss task validator (filenames == ids, no duplicates, no extra keys).
 
 **Fan-out:** none. Each `TASKS.md` row maps 1:1 to a single task JSON — there is no
 plan-enumerated dimension (no fixed language/dataset/document set) to expand. Pages that
