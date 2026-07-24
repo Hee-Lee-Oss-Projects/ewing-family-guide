@@ -6,7 +6,7 @@ A family hears the words "Ewing sarcoma" and the ground disappears. It is rare (
 
 **Definition of shipped:** plain-language guide is delivered through a trusted family-facing channel and real families use it to better understand the diagnosis and engage with their care team — with clinical accuracy signed off by an oncologist, tone/dignity/usefulness signed off by a patient advocate, th
 
-This is an **Hee-Lee Oss** good-deed project. Contributors pull a task, do it with their own coding agent, and open a PR. Platform: https://github.com/jdev1977/hee-lee-oss
+This is a **Hee-Lee Oss** good-deed project. Contributors pull a task, do it with their own coding agent, and open a PR. Get started: https://github.com/Hee-Lee-Oss-Projects/hee-lee-oss-downloads
 
 ## Plan
 - [PLAN.md](./PLAN.md) — robust enterprise plan (vision, architecture, roadmap, risks; includes an applied-improvements appendix + review sign-off)
